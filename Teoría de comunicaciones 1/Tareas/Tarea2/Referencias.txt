@@ -1,0 +1,26 @@
+Link: https://youtu.be/Hsq9NaSyy4Q
+Tarea: 3-2-1 Acción
+Autores: Kazuo Hirose, Salvador Yábar
+
+Referencias:
+[1] Inzunza González, Everardo, O. Tiznado, Soares López, Juracy, Cardoza Avendaño, 
+Liliana, C. Wilson, and J. Miguel, “Desarrollo e integración de una estación de radio 
+AM/FM basada en computadora,” Ingeniería e Investigación, vol. 30, no. 2, pp. 78–86, 
+2024, Accessed: Apr. 09, 2024. [Online]. 
+Available: http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0120-56092010000200008
+‌
+
+[2] “Radio Frequency Bands | TeraSense,” terasense.com. 
+https://terasense.com/terahertz-technology/radio-frequency-bands/
+‌
+[3] “File:Rectangular function.svg - Wikimedia Commons,” 
+commons.wikimedia.org. https://commons.wikimedia.org/wiki/File:Rectangular_function.svg 
+(accessed Apr. 09, 2024).
+
+Software usado:
+‌Chat GPT - Ayuda en elaboración del guion
+Clipchamp - Narrador de voz
+Leonardo.ai - Imágenes
+upscale.media - Mejorar la calidad de las imágenes
+Bing Image creator - Imágenes
+Melody.ml - Música

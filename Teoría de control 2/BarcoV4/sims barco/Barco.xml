@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/08/21||09:43:07" using="Simscape Multibody Link Version 7.2" from="SolidWorks 28.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Barco" uid="Barco" version="203">
+<AssemblyFile name="Barco.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="eje_giro-1" uid="eje_giro-1" grounded="true" entityUid="eje_giro*:*Default">
+<Transform>
+<Rotation>0 -1 0 -1.0000000000000002 0 -1.6653345369377348e-16 -1.6653345369377348e-16 0 -1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="aleta-2" uid="aleta-2" entityUid="aleta*:*Default">
+<Transform>
+<Rotation>-0.99995436538567706 -1.2498138955738904e-16 -0.0095533840144812684 1.2381146089285426e-16 -1 1.2305364790313224e-16 -0.0095533840144812684 1.2186521396606577e-16 0.99995436538567706</Rotation>
+<Translation>0.087474315480785242 0.087659531851084674 -0.015336699239782786</Translation>
+</Transform>
+</Instance>
+<Instance name="barcotridimensional-1" uid="barcotridimensional-1" entityUid="barcotridimensional*:*Predeterminado">
+<Transform>
+<Rotation>1 2.7755575615629126e-16 -1.2490009027033102e-16 -1.2490009027033107e-16 1.227316859253591e-16 -1 -2.775557561562913e-16 1 1.227316859253591e-16</Rotation>
+<Translation>0 0 -0.036680000000000462</Translation>
+</Transform>
+</Instance>
+<Instance name="aleta-1" uid="aleta-1" entityUid="aleta*:*Default">
+<Transform>
+<Rotation>-0.99996365734164327 1.2492648373697478e-16 0.0085254909491869514 1.2388298723860476e-16 1 -1.2292532379633265e-16 -0.0085254909491869514 -1.2186469307682541e-16 -0.99996365734164327</Rotation>
+<Translation>0.087474454860124645 -0.087659531851084688 -0.015352117635762171</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>barcotridimensional-1</Uid>
+</InstancePath>
+<Position>0.072474999999999984 0.021200000000000021 0.022659531851084679</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>aleta-1</Uid>
+</InstancePath>
+<Position>0.014999999999999999 0.065000000000000002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>barcotridimensional-1</Uid>
+</InstancePath>
+<Position>0.072474999999999984 0.021200000000000021 0.022659531851084679</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>aleta-1</Uid>
+</InstancePath>
+<Position>0.014999999999999999 0.065000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>barcotridimensional-1</Uid>
+</InstancePath>
+<Position>0.072474999999999984 0.021200000000000017 -0.022659531851084692</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>aleta-2</Uid>
+</InstancePath>
+<Position>0.014999999999999999 0.065000000000000002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>barcotridimensional-1</Uid>
+</InstancePath>
+<Position>0.072474999999999984 0.021200000000000017 -0.022659531851084692</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>aleta-2</Uid>
+</InstancePath>
+<Position>0.014999999999999999 0.065000000000000002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident15">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>eje_giro-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Barco</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Parallel name="Parallel5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>eje_giro-1</Uid>
+</InstancePath>
+<Position>-0.0048238191061885745 0.10000000000000001 -0.0012500000000000018</Position>
+<Axis>-1.0000000000000002 0 -3.3306690738754691e-16</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Barco</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Parallel>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>eje_giro-1</Uid>
+</InstancePath>
+<Position>0 0.10000000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="point">
+<InstancePath>
+<Uid>Barco</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+</ConstraintGeometry>
+</Concentric>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>barcotridimensional-1</Uid>
+</InstancePath>
+<Position>0 0.03667999999999999 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>eje_giro-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident19">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>barcotridimensional-1</Uid>
+</InstancePath>
+<Position>0 0.03667999999999999 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>eje_giro-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+<Frames>
+<Frame name="SMLINK_xyz" uid="SMLINK_xyz">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.20637499999999998 0 -0.036680000000000518</Translation>
+</Transform>
+</Frame>
+</Frames>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="aleta" uid="aleta*:*Default" version="123">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="aleta.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.011184236489243961</Mass>
+<CenterOfMass>0.011341991359270579 0.022795779972135999 0</CenterOfMass>
+<Inertia>2.3954864324293713e-06 1.0633518179488695e-06 3.3516077008739891e-06 0 0 -1.143810444870627e-07</Inertia>
+</MassProperties>
+<GeometryFile name="aleta_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Diffuse r="0.90980392156862744" g="0.44313725490196076" b="0.031372549019607843" a="1"/>
+<Specular r="0.45490196078431372" g="0.22156862745098038" b="0.015686274509803921" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="barcotridimensional" uid="barcotridimensional*:*Predeterminado" version="594">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="barcotridimensional.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>3.5359908621658604</Mass>
+<CenterOfMass>0.030756674436232447 0.058502544453350798 3.5060501126082523e-06</CenterOfMass>
+<Inertia>0.0063876602981203538 0.034950160665912902 0.035382576315681383 -5.7047240707379875e-07 -1.54952075758801e-06 -0.00046946397308167068</Inertia>
+</MassProperties>
+<GeometryFile name="barcotridimensional_Predeterminado_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+<Part name="eje_giro" uid="eje_giro*:*Default" version="117">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="eje_giro.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0077478376122606238</Mass>
+<CenterOfMass>0 0.049999999999999996 0</CenterOfMass>
+<Inertia>6.5049434486814213e-06 9.556800736956623e-08 6.5036872457891843e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="eje_giro_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+<Frames>
+</Frames>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
