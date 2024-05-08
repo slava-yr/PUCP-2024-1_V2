@@ -1,0 +1,86 @@
+
+DSB-SC
+
+Señal de tono:
+
+f(t)=cos(2*pi*400*t)
+
+fmod(t)=cos(2*pi*400*t)*cos(2*pi*4220*t)
+
+Predetección: cos(2*pi*400*t)*cos(2*pi*4220*t)*cos(2*pi*4220*t)
+
+Señal de dos tonos:
+
+f(t)=0.5*(cos(2*pi*200*t)+cos(2*pi*400*t))
+
+fmod(t)=0.5*(cos(2*pi*200*t)+cos(2*pi*400*t))*cos(2*pi*4220*t)
+
+DSB-LC
+
+Versión 1
+
+fmod=A(1+mf(t))cos(wct)
+
+Envolvente: E(t)=A(1+mf(t)) --> Emáx=A(1+m*mp)	  y	Emín=A(1-m*mp)
+				D=2Emáx			d=2Emín
+
+Parámetros: A=0.3, fc=4220
+
+Señal f(t):  cos(2*pi*400*t)	mp=1, fm=400Hz
+
+Índice de modulación: 	im=m.mp=m
+
+Señal fmod(t):  0.3*(1+0.5*cos(2*pi*400*t))*cos(2*pi*4220*t)
+
+
+Versión 2
+
+fmod=(A+f(t))cos(wct)
+
+fmod=A(1+f(t)/A)cos(wct)=Acos(wct)+f(t)cos(wct)		^	im=mp/A
+
+
+mp=0.25, fm=400Hz, im=mp/A=0.25/A
+
+f(t) = 0.25*cos(2*pi*400*t)
+
+fmod(t) = 0.75*(1+(0.25/0.75)*cos(2*pi*400*t))*cos(2*pi*4220*t)
+
+ 	= 0.75*cos(2*pi*4220*t)+0.25*cos(2*pi*400*t)*cos(2*pi*4220*t)
+
+
+BLU-LSB
+
+f(t) = 0.5*cos(2*pi*400*t)
+
+fmod(t) = 0.5*cos(2*pi*400*t)*cos(2*pi*4220*t)-0.5*sin(2*pi*400*t)*sin(2*pi*4220*t)
+
+
+SSB-RC
+
+Parábola truncada
+
+
+f(t) = 0.5*cos(2*pi*400*t)
+
+fmod(t) = 0.25*cos(2*pi*4220*t)+0.5*cos(2*pi*400*t)*cos(2*pi*4220*t)+0.5*sin(2*pi*400*t)*sin(2*pi*4220*t)
+
+Parábola completa
+
+f(t) = 0.5*cos(2*pi*400*t)
+
+fmod(t) = 0.5*cos(2*pi*4220*t)+0.5*cos(2*pi*400*t)*cos(2*pi*4220*t)+0.5*sin(2*pi*400*t)*sin(2*pi*4220*t)
+
+
+VSB-SC
+
+f(t) = 0.5*cos(2*pi*400*t)
+
+fmod(t) = 0.5*cos(2*pi*400*t)*cos(2*pi*4220*t)+0.5*sin(2*pi*400*t+0.1)*sin(2*pi*4220*t)
+
+VSB-LC
+
+f(t) = 0.5*cos(2*pi*400*t)
+
+fmod(t) = 0.5*cos(2*pi*4220*t)+0.5*cos(2*pi*400*t)*cos(2*pi*4220*t)+0.5*sin(2*pi*400*t+0.1)*sin(2*pi*4220*t+0.1)
+
